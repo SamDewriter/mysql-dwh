@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  webserver:
+    build:
+      context: ./
+      dockerfile: /home/mubarak/mysql-dwh/Dockerfile
+    image: puckel/docker-airflow:latest
+    container_name: airflow_test
+    volumes:
+      - /home/ubuntu/dags1/:/usr/local/airflow/dags
+    ports:
+      - 8080:8080
+    networks:
+      - backend
+    restart: always
+    depends_on:
+      - mysql-db
+  mysql-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: anotherme
+      MYSQL_DATABASE: test_db
+    container_name: mysql-db2
+    ports:
+      - 3310:3306
+    networks:
+      - backend
+networks:
+  backend:
+    driver: "bridge"
