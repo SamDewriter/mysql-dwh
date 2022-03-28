@@ -7,6 +7,17 @@ import os
 import pymysql
 
 def main(params):
+    """This function takes inputs from the user.
+    
+    It takes several arguments from the user and them
+    to create a connection to a MySQL Database.
+    
+    Args:
+        params (params): Values required to create a connection to a db
+    
+    Returns:
+        None
+    """
     
     user = params.user
     password = params.password
@@ -22,6 +33,7 @@ def main(params):
     
     engine = create_engine(f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}")
     
+    # Load the data in chunks 
     df_iter = pd.read_csv(csv_name, iterator=True, chunksize=100000)
     df = next(df_iter)
     
@@ -69,3 +81,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     main(args)
+    
