@@ -1,0 +1,63 @@
+
+
+============================== 2022-04-02 11:25:41.672164 | 8a0af6eb-bb1c-4519-bb2a-fcae70182242 ==============================
+11:25:41.672164 [info ] [MainThread]: Running with dbt=1.0.4
+11:25:41.672526 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/home/mubarak/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+11:25:41.672667 [debug] [MainThread]: Tracking: tracking
+11:25:41.675722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cb075910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cb075160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cafbdaf0>]}
+11:25:41.676323 [info ] [MainThread]: Creating dbt configuration folder at /home/mubarak/.dbt
+11:26:07.682553 [debug] [MainThread]: Starter project path: /home/mubarak/venv/mlflowenv/lib/python3.9/site-packages/dbt/include/starter_project
+11:26:15.823855 [info ] [MainThread]: Profile mysql_dwh written to /home/mubarak/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+11:26:15.824416 [info ] [MainThread]: 
+Your new dbt project "mysql_dwh" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+11:26:15.824883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cc18cc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cc18c400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7cc18ce80>]}
+
+
+============================== 2022-04-02 12:31:43.932322 | 3d00d5b6-e43f-4bf8-b411-bd4f0fbfd4b3 ==============================
+12:31:43.932322 [info ] [MainThread]: Running with dbt=1.0.4
+12:31:43.950405 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/home/mubarak/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+12:31:43.950751 [debug] [MainThread]: Tracking: tracking
+12:31:43.956348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830e455cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830d8c7f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830e4b6dc0>]}
+12:31:44.167391 [debug] [MainThread]: Executing "git --help"
+12:31:44.171482 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+12:31:44.171991 [debug] [MainThread]: STDERR: "b''"
+12:31:44.203192 [debug] [MainThread]: Acquiring new mysql connection "debug"
+12:31:44.203723 [debug] [MainThread]: Using mysql connection "debug"
+12:31:44.203869 [debug] [MainThread]: On debug: select 1 as id
+12:31:44.203986 [debug] [MainThread]: Opening a new connection, currently in state init
+12:31:44.670526 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.47 seconds
+12:31:44.672811 [debug] [MainThread]: On debug: Close
+12:31:44.674505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830f2adf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830f2ad310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f830f2adfa0>]}
+12:31:46.062326 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-04-02 12:35:32.446540 | 3dfe8053-f5c7-4aac-8684-b201b97a2cc2 ==============================
+12:35:32.446540 [info ] [MainThread]: Running with dbt=1.0.4
+12:35:32.446861 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/home/mubarak/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+12:35:32.447003 [debug] [MainThread]: Tracking: tracking
+12:35:32.450633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d6f890d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d6f894c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d6f89460>]}
+12:35:32.517184 [debug] [MainThread]: Executing "git --help"
+12:35:32.522224 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+12:35:32.522731 [debug] [MainThread]: STDERR: "b''"
+12:35:32.526285 [debug] [MainThread]: Acquiring new mysql connection "debug"
+12:35:32.526907 [debug] [MainThread]: Using mysql connection "debug"
+12:35:32.527124 [debug] [MainThread]: On debug: select 1 as id
+12:35:32.527322 [debug] [MainThread]: Opening a new connection, currently in state init
+12:35:32.542037 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+12:35:32.543499 [debug] [MainThread]: On debug: Close
+12:35:32.545372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d80fdf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d80fd340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08d80fdfa0>]}
+12:35:34.219904 [debug] [MainThread]: Connection 'debug' was properly closed.
